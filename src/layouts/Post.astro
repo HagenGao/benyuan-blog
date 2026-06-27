@@ -1,0 +1,23 @@
+---
+import Base from './Base.astro';
+import Subscribe from '../components/Subscribe.astro';
+import Comments from '../components/Comments.astro';
+import { UI, fmtDate } from '../config.js';
+
+const { frontmatter, lang, path } = Astro.props;
+const t = UI[lang];
+---
+<Base title={frontmatter.title} description={frontmatter.description} lang={lang} path={path}>
+  <article class="article">
+    <div class="article-header">
+      <a href={`/${lang}/`} class="back-link">{t.back}</a>
+      <p class="article-meta">{fmtDate(frontmatter.pubDate, lang)}</p>
+      <h1>{frontmatter.title}</h1>
+    </div>
+    <div class="prose">
+      <slot />
+    </div>
+    <Subscribe lang={lang} />
+    <Comments lang={lang} />
+  </article>
+</Base>

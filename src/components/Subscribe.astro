@@ -1,0 +1,18 @@
+---
+import { SITE, UI } from '../config.js';
+const { lang = 'zh' } = Astro.props;
+const t = UI[lang];
+---
+<section class="subscribe">
+  <h3>{t.subscribeTitle}</h3>
+  <p>{t.subscribeDesc}</p>
+  <form
+    class="subscribe-form"
+    action={`https://buttondown.com/api/emails/embed-subscribe/${SITE.buttondownUser}`}
+    method="post"
+    target="_blank"
+  >
+    <input type="email" name="email" placeholder={t.subscribePlaceholder} required />
+    <button type="submit">{t.subscribeButton}</button>
+  </form>
+</section>
