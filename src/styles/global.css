@@ -306,6 +306,24 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .subscribe-form button:hover { opacity: 0.88; }
 
+/* ---------- 文章末尾关注引导（低调） ---------- */
+.follow-line {
+  display: block;
+  max-width: var(--measure);
+  margin: 3.5rem auto 0;
+  padding: 1.1rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.follow-line:hover {
+  border-color: var(--accent-soft);
+  color: var(--accent);
+  text-decoration: none;
+}
+
 /* ---------- 评论区 ---------- */
 .comments {
   max-width: var(--measure);

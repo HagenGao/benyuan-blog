@@ -2,13 +2,15 @@
 export const SITE = {
   // Giscus 评论：去 https://giscus.app 生成后填这四项
   giscus: {
-    repo: 'your-name/your-blog-repo',
-    repoId: 'YOUR_REPO_ID',
+    repo: 'HagenGao/benyuan-blog',
+    repoId: 'R_kgDOTG6lDw',
     category: 'Announcements',
-    categoryId: 'YOUR_CATEGORY_ID',
+    categoryId: 'DIC_kwDOTG6lD84DAAkb',
   },
   // Buttondown 订阅：把 yourname 换成你的 Buttondown 用户名
   buttondownUser: 'yourname',
+  // YouTube 频道地址（文章末尾的关注引导指向这里）
+  youtube: 'https://youtube.com/@gaohailu',
 };
 
 export const UI = {
@@ -27,6 +29,7 @@ export const UI = {
     subscribePlaceholder: '你的邮箱地址',
     subscribeButton: '订阅',
     commentsLabel: '评论',
+    followLine: '想追更新，可以关注我的 YouTube 频道 →',
     footerNote: '以 CC BY-NC-ND 4.0 授权',
     otherLang: 'EN',
     otherLangPath: (p) => p.replace(/^\/zh/, '/en'),
@@ -46,6 +49,7 @@ export const UI = {
     subscribePlaceholder: 'your@email.com',
     subscribeButton: 'Subscribe',
     commentsLabel: 'Comments',
+    followLine: 'Want new pieces as they go up? Follow on YouTube →',
     footerNote: 'Licensed under CC BY-NC-ND 4.0',
     otherLang: '中文',
     otherLangPath: (p) => p.replace(/^\/en/, '/zh'),

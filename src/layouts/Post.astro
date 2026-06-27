@@ -1,6 +1,6 @@
 ---
 import Base from './Base.astro';
-import Subscribe from '../components/Subscribe.astro';
+import Follow from '../components/Follow.astro';
 import Comments from '../components/Comments.astro';
 import { UI, fmtDate } from '../config.js';
 
@@ -17,7 +17,7 @@ const t = UI[lang];
     <div class="prose">
       <slot />
     </div>
-    <Subscribe lang={lang} />
+    <Follow lang={lang} />
     <Comments lang={lang} />
   </article>
 </Base>

@@ -1,6 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Subscribe from '../../components/Subscribe.astro';
 import { getCollection } from 'astro:content';
 import { UI, fmtDate } from '../../config.js';
 
@@ -28,7 +27,6 @@ const posts = (await getCollection('blog', ({ id, data }) => id.startsWith('en/'
           <p class="post-desc">{post.data.description}</p>
         </a>
       ))}
-      <Subscribe lang={lang} />
     </div>
   </section>
 </Base>

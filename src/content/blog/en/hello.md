@@ -18,6 +18,6 @@ Video pushes an idea in front of you for the first time and gets you to stop and
 - Some teardowns: taking rules that look obvious and prying them open to see the assumptions underneath
 - The occasional essay
 
-If any of this is useful, subscribe — you'll get an email when something new goes up.
+If any of this is useful, follow along on YouTube — new pieces go up there too.
 
 The comments are below; anyone with a GitHub account can leave one.

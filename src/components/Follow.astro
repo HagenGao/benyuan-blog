@@ -1,0 +1,8 @@
+---
+import { SITE, UI } from '../config.js';
+const { lang = 'zh' } = Astro.props;
+const t = UI[lang];
+---
+<a class="follow-line" href={SITE.youtube} target="_blank" rel="noopener">
+  {t.followLine}
+</a>
